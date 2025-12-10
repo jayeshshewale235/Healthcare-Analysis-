@@ -1,0 +1,191 @@
+🩺 Healthcare Utilization & Flu Vaccination Analysis
+(Python • Pandas • NumPy • Matplotlib • Seaborn • Scikit-learn)
+
+This project explores healthcare encounter patterns, vaccination behaviour, and demographic insights using two real-world synthetic datasets:
+
+Healthcare Demo Data (2022) – Main dataset
+
+Flu Shot 2019 Survey Data – Secondary dataset
+
+The analysis includes interactive dashboards, data visualizations, and a machine-learning model predicting flu vaccination status.
+Designed as a LinkedIn/GitHub portfolio project, it highlights strong EDA, visualization, and modeling skills.
+
+📌 Project Structure
+1. Healthcare Demo Data (Primary Dashboard + ML Model)
+
+This dataset contains information about:
+
+Patient demographics
+
+Encounter types (inpatient, outpatient, emergency)
+
+Claim costs
+
+Payer categories
+
+Covid status
+
+Flu vaccination status for 2022
+
+Key insights covered in the dashboard:
+
+Monthly encounter trends
+
+Average claim cost by payer
+
+Cost distribution by encounter class
+
+Flu 2022 vaccination patterns across:
+
+Age
+
+Race
+
+Encounter class
+
+Covid status
+
+KDE age distributions for flu vaccination patterns
+
+Machine Learning Component
+
+A Random Forest Classifier predicts whether a patient received a flu shot in 2022, using:
+
+Age
+
+Race
+
+Encounter class
+
+Payer category
+
+Covid status
+
+Outputs include:
+
+Classification report
+
+ROC curve
+
+Feature importance analysis
+
+📌 2. Flu Shot 2019 Dataset (Secondary Mini-Dashboard)
+
+This dataset is used to build a smaller, supporting dashboard analyzing:
+
+Overall flu shot uptake in 2019
+
+Coverage by:
+
+Age band
+
+Gender
+
+Race
+
+This adds depth to the project by showing historical vaccination behavior.
+
+🧠 Why Two Dashboards?
+
+The datasets cannot be merged because patient IDs and features do not match.
+However, both contribute to a cohesive storyline:
+
+“How demographics and healthcare encounters relate to flu vaccination behavior across years.”
+
+So both dashboards are included in the same notebook but analyzed separately.
+
+🛠 Tech Stack
+Purpose	Tools
+Data Processing	Pandas, NumPy
+Visualization	Matplotlib, Seaborn
+Machine Learning	Scikit-learn
+Notebook Environment	Google Colab
+Files Used	Healthcare Demo Data.csv, Flu shot 2019.xlsx
+📊 Key Visualizations
+Dashboard 1 – Healthcare (2022)
+
+Encounters by class
+
+Monthly unique encounters
+
+Average claim cost by payer
+
+Cost distribution (boxplots)
+
+Flu 2022 vs Covid heatmap
+
+Flu 2022 vaccination by race
+
+Flu 2022 vaccination by age band
+
+Dashboard 2 – Flu Shot 2019
+
+Overall uptake
+
+Vaccination by:
+
+Age band
+
+Race
+
+Gender
+
+ML Model Output
+
+ROC curve
+
+Prediction performance
+
+Feature importances
+
+🤖 Machine Learning Summary
+
+We trained a Random Forest Classifier to predict flu vaccination for 2022.
+Results include:
+
+High ROC-AUC score
+
+Good precision and recall balance
+
+Clear feature contribution patterns
+
+This demonstrates ability to preprocess data, build models, and interpret outputs.
+
+📁 Folder Structure (Recommended)
+├── data
+│   ├── Healthcare Demo Data.csv
+│   ├── Flu shot 2019.xlsx
+│
+├── notebooks
+│   ├── Healthcare_Flu_Analysis.ipynb
+│
+├── images
+│   ├── dashboard1.png
+│   ├── dashboard2.png
+│   ├── roc_curve.png
+│
+├── README.md
+
+🚀 How to Run
+
+Open Google Colab.
+
+Upload both datasets into the session.
+
+Run the notebook top to bottom.
+
+All dashboards and model outputs are generated automatically.
+
+💡 Future Enhancements
+
+Convert dashboards into a Streamlit or Plotly dashboard
+
+Add clustering for patient segmentation
+
+Build time-series forecasting for encounter trends
+
+Add SHAP explainability for model predictions
+
+⭐ Connect With Me
+
+If you found this project useful, feel free to connect with me on LinkedIn or star ⭐ the repository!
